@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Krishnaganth R — Full-stack developer and data analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF2F6;--panel:#FFFFFF;--ink:#1B2A41;--muted:#55657C;--line:#C9D3DF;--accent:#1F7A55;--accent-ink:#FFFFFF;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101A2B;--panel:#17233A;--ink:#E7EDF5;--muted:#9AABC2;--line:#2B3B57;--accent:#4FD39A;--accent-ink:#0C1A14}}
+:root[data-theme="dark"]{--bg:#101A2B;--panel:#17233A;--ink:#E7EDF5;--muted:#9AABC2;--line:#2B3B57;--accent:#4FD39A;--accent-ink:#0C1A14}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 var(--body);-webkit-text-size-adjust:100%}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:18px;flex-wrap:wrap;padding:20px 0;font-weight:500;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 64px;border-bottom:1px solid var(--line)}
+h1{font:800 clamp(2.8rem,11vw,6.5rem)/.98 var(--display);letter-spacing:-.03em;margin:0 0 20px;overflow-wrap:anywhere}
+.hero p{font-size:clamp(1.1rem,2.6vw,1.4rem);max-width:34em;margin:0 0 28px;color:var(--muted)}
+.hero p strong{color:var(--ink);font-weight:600}
+.status{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--accent-ink);padding:8px 16px;border-radius:999px;font-weight:600;font-size:.95rem}
+.status i{width:9px;height:9px;border-radius:50%;background:currentColor;display:block;animation:pulse 2.4s ease-out 1}
+@keyframes pulse{0%{box-shadow:0 0 0 0 currentColor}100%{box-shadow:0 0 0 12px transparent}}
+@media (prefers-reduced-motion:reduce){.status i{animation:none}html{scroll-behavior:auto}}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font:700 clamp(1.8rem,5vw,2.6rem)/1.1 var(--display);letter-spacing:-.02em;margin:0 0 28px}
+h3{font:700 1.3rem/1.25 var(--display);margin:0 0 6px}
+.project{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:20px}
+.project.lead{border-left:6px solid var(--accent)}
+.meta{color:var(--muted);font-size:.95rem;margin:0 0 12px}
+.project p:not(.meta){margin:0 0 14px;max-width:62ch}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tags li{border:1px solid var(--line);border-radius:6px;padding:3px 10px;font-size:.88rem;font-weight:500}
+.entry{padding:18px 0;border-top:1px solid var(--line)}
+.entry:first-of-type{border-top:0;padding-top:0}
+.entry p{margin:0 0 6px;color:var(--muted);max-width:62ch}
+.entry .meta{margin-bottom:8px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.skills h3{font-size:1.1rem}
+.skills ul{margin:0;padding:0;list-style:none;color:var(--muted)}
+.skills li{padding:3px 0}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+.links a{display:inline-block;padding:12px 20px;border:2px solid var(--ink);border-radius:10px;font-weight:600;text-decoration:none}
+.links a.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.links a:hover{border-color:var(--accent)}
+.sub{color:var(--muted);margin:20px 0 0}
+footer{padding:32px 0 56px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#achievements">Achievements</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<h1>Krishnaganth R</h1>
+<p>I build <strong>full-stack web apps</strong> and turn raw data into dashboards people can act on. Final-year B.Tech Information Technology student.</p>
+<span class="status"><i></i>Open to internships and entry-level roles</span>
+</header>
+
+<section id="projects">
+<h2>Projects</h2>
+<article class="project lead">
+<h3>CareerForge</h3>
+<p class="meta">Capstone project · Team of four</p>
+<p>An AI-integrated career preparation and assessment platform with real-time scoring and an analytics dashboard. Includes NexBot, an AI resume analyzer.</p>
+<ul class="tags"><li>React.js</li><li>Node.js</li><li>Express.js</li><li>MongoDB Atlas</li><li>Vercel</li><li>Render</li></ul>
+</article>
+<article class="project">
+<h3>WD Women's College Management System</h3>
+<p class="meta">Full-stack MERN application</p>
+<p>A scalable college management system secured with JWT authentication and containerized with Docker.</p>
+<ul class="tags"><li>MongoDB</li><li>Express.js</li><li>React</li><li>Node.js</li><li>JWT</li><li>Docker</li></ul>
+</article>
+<article class="project">
+<h3>Sales Dashboard</h3>
+<p class="meta">Data analytics project</p>
+<p>A sales and revenue analytics dashboard that turns transaction data into clear, trackable metrics.</p>
+<ul class="tags"><li>Data visualization</li><li>Sales analytics</li></ul>
+</article>
+</section>
+
+<section id="experience">
+<h2>Internships</h2>
+<div class="entry"><h3>Data Analytics Intern, Thiranex</h3><p class="meta">Remote · 15 Apr 2026 – 14 May 2026</p><p>Analyzed datasets and applied analytics techniques to produce actionable insights.</p><p>Used Excel and Power BI to clean, process and visualize data.</p></div>
+<div class="entry"><h3>Web Development Intern, EdiGlobal</h3><p class="meta">Remote · 1 May 2025 – 30 Jun 2025</p><p>Built responsive web applications and improved user interfaces with modern web technologies.</p><p>Applied full-stack development concepts to solve technical problems using industry best practices.</p></div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Languages</h3><ul><li>Java</li><li>C and C++</li><li>Python</li></ul></div>
+<div><h3>Core concepts</h3><ul><li>Object-oriented programming</li><li>Design and analysis of algorithms</li><li>Database management systems</li><li>Operating systems</li></ul></div>
+<div><h3>Databases</h3><ul><li>MongoDB</li><li>SQL</li></ul></div>
+<div><h3>Tools</h3><ul><li>Microsoft Excel</li><li>Power BI</li><li>Visual Studio</li><li>GitHub</li></ul></div>
+</div>
+</section>
+
+<section id="achievements">
+<h2>Achievements and certifications</h2>
+<div class="entry"><h3>Technical Model Expo</h3><p>Showcased a Fake News Detection model at Dhanalakshmi Srinivasan University, Tiruchirappalli.</p></div>
+<div class="entry"><h3>Paper presentations on Blockchain Technology</h3><p>Presented at ByteSync'25 (Periyar Maniammai College) and at K. Ramakrishna College of Engineering and Technology.</p></div>
+<div class="entry"><h3>Panel discussion on Blockchain Technology</h3><p>Took part in a panel at Dhanalakshmi Srinivasan University.</p></div>
+<div class="entry"><h3>Certifications</h3><p>Advanced Data Analysis using Excel and Power BI, LetsUpgrade (June 2025)</p><p>Data Analytics Job Simulation, Deloitte Australia via Forage (2025)</p><p>Programming in Java, NPTEL (2025)</p></div>
+<div class="entry"><h3>Workshop</h3><p>SDLC using Low-Code/No-Code with AI Tools, conducted by VDart, Trichy.</p></div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="entry"><h3>B.Tech, Information Technology</h3><p class="meta">Dhanalakshmi Srinivasan University, Trichy · Graduating 2027</p><p>Final-year student with a foundation in software development, algorithms, databases and operating systems.</p></div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="links">
+<a class="primary" href="mailto:krishnaganthr24@gmail.com">krishnaganthr24@gmail.com</a>
+<a href="https://github.com/Krish-024" rel="noopener">GitHub</a>
+<a href="https://www.linkedin.com/in/krishnaganth-r-66721a333/" rel="noopener">LinkedIn</a>
+</div>
+<p class="sub">Based in Thiruvaiyaru, Tamil Nadu.</p>
+</section>
+
+<footer>© Krishnaganth R  is beautiful</footer>
+</div>
+</body>
+</html>
